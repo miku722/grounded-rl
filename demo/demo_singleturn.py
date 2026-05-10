@@ -28,6 +28,7 @@ python demo/demo_singleturn.py \
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
 from typing import List
 
@@ -60,11 +61,13 @@ def main() -> None:
     # 1. Load model + processor
     # ----------------------------------------------------------------------- #
     print(f"Loading checkpoint [{args.model}] …")
+    attn_implementation = os.getenv("VIGORL_ATTN_IMPLEMENTATION", "sdpa")
+    print(f"Using attention implementation [{attn_implementation}]")
     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
         args.model,
         torch_dtype=torch.bfloat16,
         device_map="auto",
-        attn_implementation="flash_attention_2",
+        attn_implementation=attn_implementation,
     )
     processor = AutoProcessor.from_pretrained(
         args.model, max_pixels=12960000, min_pixels=3136
