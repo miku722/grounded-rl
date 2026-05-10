@@ -1,6 +1,7 @@
 # Python artifacts
 *.pyc
 __pycache__/
+*.egg-info/
 
 # Logs and outputs
 *.txt
