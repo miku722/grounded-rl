@@ -19,11 +19,12 @@ mkdir -p vllm_logs
 vllm serve $CHECKPOINT_PATH \
     --port $PORT \
     --served-model-name "qwen_vllm" \
-    --gpu-memory-utilization 0.9 \
+    --gpu-memory-utilization 0.95 \
+    --max-model-len 8192 \
     --tensor-parallel-size $NUM_GPUS \
     --uvicorn-log-level info \
     --limit-mm-per-prompt "image=30" \
-    --mm-processor-kwargs '{"max_pixels":12960000,"min_pixels":4096}' \
+    --mm-processor-kwargs '{"max_pixels":1587600,"min_pixels":4096}' \
     --api-key "qwen" > "vllm_logs/vllm_logfile_$(date '+%Y-%m-%d_%H-%M-%S').txt" 2>&1
 
 # Check if the command succeeded, and log a failure message if not

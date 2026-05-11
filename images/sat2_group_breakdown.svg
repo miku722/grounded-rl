@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470">
+  <rect width="960" height="470" fill="#ffffff"/>
+  <text x="40" y="52" font-family="Times New Roman, SimSun, serif" font-size="30" font-weight="700" fill="#111111">SAT-2 Accuracy by Question Group</text>
+  <text x="40" y="84" font-family="Times New Roman, SimSun, serif" font-size="18" fill="#555555">Groups are heuristic labels from the local visualization script, used for error analysis rather than official taxonomy.</text>
+
+  <g transform="translate(250,125)" font-family="Times New Roman, SimSun, serif">
+    <line x1="0" y1="0" x2="0" y2="280" stroke="#333333" stroke-width="1"/>
+    <line x1="0" y1="280" x2="600" y2="280" stroke="#333333" stroke-width="1"/>
+    <g stroke="#d7dde6" stroke-width="1">
+      <line x1="150" y1="0" x2="150" y2="280"/>
+      <line x1="300" y1="0" x2="300" y2="280"/>
+      <line x1="450" y1="0" x2="450" y2="280"/>
+      <line x1="600" y1="0" x2="600" y2="280"/>
+    </g>
+    <g font-size="15" fill="#555555">
+      <text x="-8" y="306" text-anchor="end">0%</text>
+      <text x="150" y="306" text-anchor="middle">25%</text>
+      <text x="300" y="306" text-anchor="middle">50%</text>
+      <text x="450" y="306" text-anchor="middle">75%</text>
+      <text x="600" y="306" text-anchor="middle">100%</text>
+    </g>
+
+    <g font-size="20" fill="#111111">
+      <text x="-22" y="35" text-anchor="end">object movement</text>
+      <text x="-22" y="100" text-anchor="end">other</text>
+      <text x="-22" y="165" text-anchor="end">camera movement</text>
+      <text x="-22" y="230" text-anchor="end">spatial relation</text>
+    </g>
+
+    <rect x="0" y="14" width="489.6" height="32" rx="5" fill="#2f8f6b"/>
+    <text x="502" y="37" font-size="18" fill="#222222">81.6% (528/647)</text>
+
+    <rect x="0" y="79" width="427.5" height="32" rx="5" fill="#3867b7"/>
+    <text x="440" y="102" font-size="18" fill="#222222">71.2% (664/932)</text>
+
+    <rect x="0" y="144" width="418.3" height="32" rx="5" fill="#3867b7"/>
+    <text x="431" y="167" font-size="18" fill="#222222">69.7% (557/799)</text>
+
+    <rect x="0" y="209" width="383.0" height="32" rx="5" fill="#c5534d"/>
+    <text x="396" y="232" font-size="18" fill="#222222">63.8% (1036/1623)</text>
+  </g>
+
+  <rect x="72" y="420" width="816" height="30" rx="6" fill="#f4f6f9" stroke="#d7dde6"/>
+  <text x="92" y="441" font-family="Times New Roman, SimSun, serif" font-size="17" fill="#222222">Main weakness in this run: relation-heavy questions, especially left/right/above/below viewpoint reasoning.</text>
+</svg>

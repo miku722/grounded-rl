@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420">
+  <rect width="960" height="420" fill="#ffffff"/>
+  <text x="40" y="52" font-family="Times New Roman, SimSun, serif" font-size="30" font-weight="700" fill="#111111">SAT-2 Val Reproduction Result</text>
+  <text x="40" y="84" font-family="Times New Roman, SimSun, serif" font-size="18" fill="#555555">ViGoRL-7b-Spatial, 4001 questions, string-match multiple-choice evaluation</text>
+
+  <g transform="translate(70,130)">
+    <text x="0" y="-16" font-family="Times New Roman, SimSun, serif" font-size="20" fill="#333333">Accuracy</text>
+    <line x1="0" y1="200" x2="760" y2="200" stroke="#333333" stroke-width="1"/>
+    <line x1="0" y1="0" x2="0" y2="200" stroke="#333333" stroke-width="1"/>
+    <g font-family="Times New Roman, SimSun, serif" font-size="15" fill="#555555">
+      <text x="-36" y="205">0%</text>
+      <text x="-44" y="155">25%</text>
+      <text x="-44" y="105">50%</text>
+      <text x="-44" y="55">75%</text>
+      <text x="-52" y="5">100%</text>
+    </g>
+    <g stroke="#d7dde6" stroke-width="1">
+      <line x1="0" y1="150" x2="760" y2="150"/>
+      <line x1="0" y1="100" x2="760" y2="100"/>
+      <line x1="0" y1="50" x2="760" y2="50"/>
+    </g>
+
+    <rect x="120" y="65" width="170" height="135" rx="6" fill="#8d99ae"/>
+    <text x="205" y="44" text-anchor="middle" font-family="Times New Roman, SimSun, serif" font-size="22" font-weight="700" fill="#111111">67.5%</text>
+    <text x="205" y="230" text-anchor="middle" font-family="Times New Roman, SimSun, serif" font-size="18" fill="#333333">Paper Table 2</text>
+    <text x="205" y="254" text-anchor="middle" font-family="Times New Roman, SimSun, serif" font-size="15" fill="#666666">67.5 ± 1.5</text>
+
+    <rect x="440" y="60.8" width="170" height="139.2" rx="6" fill="#3867b7"/>
+    <text x="525" y="40" text-anchor="middle" font-family="Times New Roman, SimSun, serif" font-size="22" font-weight="700" fill="#111111">69.6%</text>
+    <text x="525" y="230" text-anchor="middle" font-family="Times New Roman, SimSun, serif" font-size="18" fill="#333333">Local run</text>
+    <text x="525" y="254" text-anchor="middle" font-family="Times New Roman, SimSun, serif" font-size="15" fill="#666666">2785 / 4001</text>
+  </g>
+
+  <rect x="72" y="350" width="816" height="42" rx="6" fill="#f4f6f9" stroke="#d7dde6"/>
+  <text x="92" y="377" font-family="Times New Roman, SimSun, serif" font-size="18" fill="#222222">Observation: local score is +2.1 points higher, but still close to the paper's reported range.</text>
+</svg>
