@@ -441,7 +441,7 @@ style: |
 
 - 任务定义清楚，论文脉络完整
 - baseline 丰富，复现门槛不高
-- 与多模态、空间理解天然相关
+- 与多模态、视觉理解天然相关
 - 适合作为后续 reasoning / agent 的基础能力
 
 </div>
@@ -540,7 +540,7 @@ Benchmarking Vision Language Models for Cultural Understanding
 
 - 多数任务更偏 **retrieval / VQA / knowledge**
 - 很少要求模型指出“答案来自图像哪里”
-- 缺少 **文化知识 + 空间关系 + 视觉证据** 的联合评测
+- 缺少 **文化知识 + 视觉证据** 的联合评测
 
 </div>
 
@@ -898,7 +898,7 @@ Benchmarking Vision Language Models for Cultural Understanding; CVQA
 
 - **方法主线**：VLM + reasoning + agent + tool + RL
 - **任务形态**：任务导向 grounded visual reasoning
-- **核心场景**：普通室内空间中的视觉理解与交互
+- **核心场景**：视觉理解与交互
 - **落地验证**：博物馆导览 / cultural heritage / connoisseurship
 - **核心目标**：答得对、找得到、能解释、可执行
 
@@ -907,7 +907,7 @@ Benchmarking Vision Language Models for Cultural Understanding; CVQA
 </div>
 
 <div class="key-line">
-方向表述：<strong>面向室内空间任务的 grounded visual reasoning，研究带视觉证据的 VLM reasoning / agent；博物馆与文化遗产作为落地场景。</strong>
+方向表述：<strong> grounded visual reasoning，研究带视觉证据的 VLM reasoning / agent；博物馆与文化遗产作为落地场景。</strong>
 </div>
 
 ---
@@ -916,7 +916,7 @@ Benchmarking Vision Language Models for Cultural Understanding; CVQA
 
 ### 初步研究假设
 
-- 在室内空间或博物馆场景中，仅输出文本答案不够可靠
+- 博物馆文化图像场景中，仅输出文本答案不够可靠
 - 如果要求模型同步输出 **region grounding / segmentation evidence / action evidence**
   - 可以减少语言偏置
   - 可以增强可解释性
@@ -951,7 +951,7 @@ Benchmarking Vision Language Models for Cultural Understanding; CVQA
 <div class="decision-card">
 <div class="decision-title">中期</div>
 
-- 搭建一个普通室内空间 / 博物馆场景的 pilot task
+- 搭建一个普通图像 / 博物馆场景的 pilot task
 - 先做 answer-only baseline
 - 再加入 grounding / tool-use / RL 变体比较
 
@@ -970,8 +970,8 @@ Benchmarking Vision Language Models for Cultural Understanding; CVQA
 1. **2D grounding 很强，但不适合作为我当前的主方向。**
 2. **Cultural 场景给了我一个更有价值的落地问题。**
 3. **VLM 的 grounded reasoning / tool-use 提供了方法创新空间。**
-4. **因此我最终选择：面向室内空间任务的 grounded visual reasoning，做带视觉证据的 VLM reasoning / agent；cultural 作为重点落地场景。**
+4. **因此我最终选择：面向图像的 grounded visual reasoning，做带视觉证据的 VLM reasoning / agent；cultural 作为重点落地场景。**
 
-<div class="key-line">
+<!-- <div class="key-line">
 最终目标不是再把模型“说得更像”，而是让它在真实空间任务里真正做到：<strong>看得见、指得准、讲得清、能行动。</strong>
-</div>
+</div> -->
